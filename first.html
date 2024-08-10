@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator and Capitalizer</title>
+</head>
+<body>
+    <h1>Sum of Numbers Calculator</h1>
+    <form id="sumForm" action="/calculate-sum" method="get">
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" name="number" required>
+        <button type="submit">Calculate Sum</button>
+    </form>
+    <p id="sumResult"></p> <!-- Display sum result here -->
+
+    <h1>Capitalize First and Last Letters</h1>
+    <form id="capitalizeForm" action="/capitalize" method="get">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString" required>
+        <button type="submit">Make Capital</button>
+    </form>
+    <p id="capitalizeResult"></p> <!-- Display capitalized result here -->
+
+    <h1>Find Average and Median</h1>
+    <form id="averageMedianForm" action="/average-median" method="get">
+        <label for="numbers">Enter numbers (comma-separated):</label>
+        <input type="text" id="numbers" name="numbers" required>
+        <button type="submit">Calculate Average and Median</button>
+    </form>
+    <p id="averageMedianResult"></p> <!-- Display average and median here -->
+
+    <form id="find4DigitsForm" action="/find-4-digits" method="get">
+        <label for="numbers">Enter numbers (space-separated):</label>
+        <input type="text" id="numbers" name="numbers" required>
+        <button type="submit">Find 4-Digit Number</button>
+    </form>
+    <p id="find4DigitsResult"></p> <!-- Placeholder for displaying result -->
+</body>
+</html>
